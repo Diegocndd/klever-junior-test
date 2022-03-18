@@ -12,15 +12,13 @@ import { FaEdit } from "react-icons/fa";
 import mockTokens from '../../utils/mockTokens';
 import numberWithCommas from '../../utils/numberCommas';
 
+if (!localStorage.getItem('wish-tokens')) {
+  localStorage.setItem('wish-tokens', JSON.stringify(mockTokens));
+}
+
 function Home() {
   const navigate = useNavigate();
   const [tokens, setTokens] = useState(JSON.parse(localStorage.getItem('wish-tokens')));
-
-  useEffect(() => {
-    if (!localStorage.getItem('wish-tokens')) {
-      localStorage.setItem('wish-tokens', JSON.stringify(mockTokens));
-    }
-  }, [localStorage.getItem('wish-tokens')]);
 
   return (
     <div id='main-container'>
