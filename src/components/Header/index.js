@@ -7,6 +7,9 @@ import Button from '../Button';
 import { ReactComponent as LogoStar } from '../../assets/img/shooting-star.svg';
 import { useLocation } from 'react-router-dom';
 
+import colors from '../../constants/colors';
+import texts from '../../constants/texts';
+
 function Header(props) {
   const location = useLocation();
 
@@ -18,35 +21,33 @@ function Header(props) {
       case '/':
         return (
           <Button
-            colorButton='#a935b4'
-            text='Add Token'
+            colorButton={colors.SAVE_BUTTON}
+            text={texts.ADD_TOKEN}
             onPress={() => onPressButton()}
             boldText
           />
         )
       
-      case '/add-token':
+      default:
         return (
           <Button
-            colorButton='#646464'
-            text='Voltar'
+            colorButton={colors.BACK_BUTTON}
+            text={texts.LABEL_BACK}
             onPress={() => onPressButton()}
+            size='large'
             boldText
           />
-        )
-
-      default:
-        break;
+        );
     }
   }
 
   return (
     <div id='header-container'>
       <div id='wallet-container'>
-        <LogoStar id='logo-star' fill='#e1e666' />
+        <LogoStar id='logo-star' fill={colors.LOGO_START} />
 
         <Text size={25} bold>
-            Wish Wallet
+            {texts.WALLET_NAME}
         </Text>
       </div>
 

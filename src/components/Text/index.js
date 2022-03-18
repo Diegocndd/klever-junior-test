@@ -9,7 +9,7 @@ function Text(props) {
 
   return (
     <div>
-      <p style={{fontSize: size, color, fontWeight: bold ? 'bold' : 'normal', textAlign: align}}>
+      <p style={{fontSize: size, color, fontWeight: bold ? 'bold' : 'normal', textAlign: align, maxWidth: 400}}>
         {children}
       </p>
     </div>

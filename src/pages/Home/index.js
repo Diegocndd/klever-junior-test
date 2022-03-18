@@ -51,7 +51,7 @@ function Home() {
           {tokens.map(item => {
             return (
               <tr>
-                <th className='fst-column-table'>
+                <th className='fst-column-table' onClick={() => navigate(`/edit-token?token=${item.token}`)}>
                   <FaEdit color='white' size={17} />
                 </th>
                 <th className='snd-column-table'>

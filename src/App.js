@@ -6,6 +6,7 @@ import {
 
 import Home from "./pages/Home";
 import AddToken from "./pages/AddToken";
+import EditToken from './pages/EditToken';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/add-token" element={<AddToken />} />
+            <Route exact path="/edit-token" element={<EditToken />} />
         </Routes>
     </Router>
   )

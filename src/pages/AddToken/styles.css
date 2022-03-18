@@ -1,3 +1,11 @@
+#tokenadd-content {
+  display: flex;
+  width: 30vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 #txt-token-add-container {
   display: flex;
   flex-direction: row;
@@ -7,6 +15,15 @@
 }
 
 #save-button-container {
-  background-color: red;
-  /* width: 30vw; */
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  #tokenadd-content {
+    width: 60vw;
+  }
+  
+  #txt-token-add-container {
+    width: 60vw;
+  }
 }

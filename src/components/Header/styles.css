@@ -19,3 +19,13 @@
 #logo-star {
     width: 50px;
 }
+
+@media (max-width: 900px) {
+    #header-container {
+        width: 60vw;
+    }
+
+    #logo-star {
+        width: 60px;
+    }
+}
