@@ -1,0 +1,15 @@
+#input-container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 13px;
+}
+
+#input-element {
+    width: 30vw;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}

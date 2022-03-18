@@ -1,0 +1,21 @@
+#header-container {
+    height: 20vh;
+    width: 30vw;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+#wallet-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-star {
+    width: 50px;
+}
