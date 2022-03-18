@@ -20,7 +20,7 @@ function Home() {
     if (!localStorage.getItem('wish-tokens')) {
       localStorage.setItem('wish-tokens', JSON.stringify(mockTokens));
     }
-  }, []);
+  }, [localStorage.getItem('wish-tokens')]);
 
   return (
     <div id='main-container'>
@@ -48,7 +48,7 @@ function Home() {
             </th>
           </tr>
 
-          {tokens.map(item => {
+          {tokens?.map(item => {
             return (
               <tr>
                 <th className='fst-column-table' onClick={() => navigate(`/edit-token?token=${item.token}`)}>
